@@ -17,7 +17,7 @@ export const Footer = () => (
         <ButtonGroup variant="ghost">
           <IconButton
             as="a"
-            href="#"
+            href="https://github.com/atfromhome"
             aria-label="GitHub"
             icon={<FaGithub fontSize="2rem" />}
           />
