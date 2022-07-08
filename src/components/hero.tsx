@@ -45,6 +45,7 @@ export const Hero = () => (
             px="8"
             fontWeight="bold"
             fontSize="md"
+            className="umami--click--hero-demo-button"
           >
             Klik untuk demo
           </Button>

@@ -53,6 +53,7 @@ export const MainFeature = () => {
               target="_blank"
               as="a"
               href="https://demo.ziswapp.com"
+              className="umami--click--main-freature-demo-button"
             >
               Coba demo sekarang
             </Button>
