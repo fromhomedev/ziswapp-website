@@ -19,6 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         async
         defer
         data-website-id="8ae2e4c7-ba23-4116-952b-eddebe53b9b0"
+        data-domains="ziswapp.com"
         src="https://umami.fromhome.dev/umami.js"
       />
       <Component {...pageProps} />
