@@ -6,7 +6,7 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
+import { Github } from "lucide-react";
 import { Logo } from "./logo";
 
 export const Footer = () => (
@@ -19,7 +19,7 @@ export const Footer = () => (
             as="a"
             href="https://github.com/atfromhome"
             aria-label="GitHub"
-            icon={<FaGithub fontSize="2rem" />}
+            icon={<Github fontSize="2rem" />}
           />
         </ButtonGroup>
       </Stack>
