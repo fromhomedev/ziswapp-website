@@ -89,6 +89,16 @@
   dependencies:
     "@chakra-ui/theme-tools" "^2.0.2"
 
+"@chakra-ui/anatomy@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.1.1.tgz#819a1458ff727157e5500a69fc26bfea6e944495"
+  integrity sha512-LUHAoqJAgxAqmyckG5bUpBrfEo1FleEyY+1A8hkWciy58gZ+h3GoY9oBpHcdo7XdHPpy3G+3hieK/7i9NLwxAw==
+
+"@chakra-ui/anatomy@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.1.2.tgz#ea66b1841e7195da08ddc862daaa3f3e56e565f5"
+  integrity sha512-pKfOS/mztc4sUXHNc8ypJ1gPWSolWT770jrgVRfolVbYlki8y5Y+As996zMF6k5lewTu6j9DQequ7Cc9a69IVQ==
+
 "@chakra-ui/avatar@2.0.3":
   version "2.0.3"
   resolved "https://registry.npmjs.org/@chakra-ui/avatar/-/avatar-2.0.3.tgz"
@@ -342,13 +352,14 @@
     "@chakra-ui/react-utils" "2.0.1"
     "@chakra-ui/utils" "2.0.2"
 
-"@chakra-ui/pro-theme@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.npmjs.org/@chakra-ui/pro-theme/-/pro-theme-0.0.53.tgz"
-  integrity sha512-xDJ16Klf2rwNwDMH+fzxwBkKRLN1xy9Tgnpk3Gc812wbx12+YLp5TZzSd77TdrHiwRGOYA5OJ7Y3JZplD7ImHA==
+"@chakra-ui/pro-theme@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/pro-theme/-/pro-theme-0.10.0.tgz#a13e659b5492b19b93ad0d5ad511f90faf418ea2"
+  integrity sha512-2GdBfI7E0la+gYSFmY9bRgbgC6oaNNJf7X0ucAwBNELdjIr225QbnaDtL/R+vRVqf+t9HmaF4Z5/vu6ZeM4+UA==
   dependencies:
-    "@chakra-ui/theme-tools" "2.0.1"
-    focus-visible "5.2.0"
+    "@chakra-ui/anatomy" "2.1.1"
+    "@chakra-ui/styled-system" "2.9.1"
+    "@chakra-ui/theme-tools" "2.0.18"
 
 "@chakra-ui/progress@2.0.2":
   version "2.0.2"
@@ -455,6 +466,11 @@
     "@chakra-ui/form-control" "2.0.2"
     "@chakra-ui/utils" "2.0.2"
 
+"@chakra-ui/shared-utils@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/shared-utils/-/shared-utils-2.0.5.tgz#cb2b49705e113853647f1822142619570feba081"
+  integrity sha512-4/Wur0FqDov7Y0nCXl7HbHzCg4aq86h+SXdoUeuCMD3dSj7dpsVnStLYhng1vxvlbUnLpdF4oz5Myt3i/a7N3Q==
+
 "@chakra-ui/skeleton@2.0.6":
   version "2.0.6"
   resolved "https://registry.npmjs.org/@chakra-ui/skeleton/-/skeleton-2.0.6.tgz"
@@ -498,6 +514,15 @@
   dependencies:
     "@chakra-ui/utils" "2.0.2"
     csstype "^3.0.11"
+
+"@chakra-ui/styled-system@2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/styled-system/-/styled-system-2.9.1.tgz#888a4901b2afa174461259a8875379adb0363934"
+  integrity sha512-jhYKBLxwOPi9/bQt9kqV3ELa/4CjmNNruTyXlPp5M0v0+pDMUngPp48mVLoskm9RKZGE0h1qpvj/jZ3K7c7t8w==
+  dependencies:
+    "@chakra-ui/shared-utils" "2.0.5"
+    csstype "^3.0.11"
+    lodash.mergewith "4.6.2"
 
 "@chakra-ui/switch@2.0.3":
   version "2.0.3"
@@ -552,15 +577,16 @@
     "@chakra-ui/form-control" "2.0.2"
     "@chakra-ui/utils" "2.0.2"
 
-"@chakra-ui/theme-tools@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/theme-tools/-/theme-tools-2.0.1.tgz"
-  integrity sha512-CQn87uYxe3X8JmTAA52+jVS3A9FtioT4NDRUISN178yRnOly1Z6s01iYlbT37LemLSP2T3bCnHqFhdQKgS5yew==
+"@chakra-ui/theme-tools@2.0.18", "@chakra-ui/theme-tools@^2.0.2":
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.0.18.tgz#8160f0abe331e60b56f77426c28ff9a605c1a5c4"
+  integrity sha512-MbiRuXb2tb41FbnW41zhsYYAU0znlpfYZnu0mxCf8U2otCwPekJCfESUGYypjq4JnydQ7TDOk+Kz/Wi974l4mw==
   dependencies:
-    "@chakra-ui/utils" "2.0.1"
-    "@ctrl/tinycolor" "^3.4.0"
+    "@chakra-ui/anatomy" "2.1.2"
+    "@chakra-ui/shared-utils" "2.0.5"
+    color2k "^2.0.0"
 
-"@chakra-ui/theme-tools@2.0.2", "@chakra-ui/theme-tools@^2.0.2":
+"@chakra-ui/theme-tools@2.0.2":
   version "2.0.2"
   resolved "https://registry.npmjs.org/@chakra-ui/theme-tools/-/theme-tools-2.0.2.tgz"
   integrity sha512-E01ZJZB4XVqkvn2hOXKQ/uVkvaPLQN1SyxAYXjFZGyZ1ppBLl362EWfY9IgWNzDITgq9MCJyQFfm2mXwQDUNzA==
@@ -610,16 +636,6 @@
   integrity sha512-s98gDFIGbv60WMyniVjy381NXxgS1Y/6RACR1Z1pReC5XZLY5GyMqeRYyFCAeE78qKkqon77Y8EDPQXl6X78dw==
   dependencies:
     "@chakra-ui/utils" "2.0.2"
-
-"@chakra-ui/utils@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@chakra-ui/utils/-/utils-2.0.1.tgz"
-  integrity sha512-5yvIyzskfEi7nNWC0VR0T7KtOEZyy/5QwhbLZ/WD0zutV+SddLzmS7NnnnYvyuyT4SaNx/asKLerH2ucTz1pYA==
-  dependencies:
-    "@types/lodash.mergewith" "4.6.6"
-    css-box-model "1.2.1"
-    framesync "5.3.0"
-    lodash.mergewith "4.6.2"
 
 "@chakra-ui/utils@2.0.2", "@chakra-ui/utils@^2.0.2":
   version "2.0.2"
@@ -1215,6 +1231,11 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+color2k@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/color2k/-/color2k-2.0.2.tgz#ac2b4aea11c822a6bcb70c768b5a289f4fffcebb"
+  integrity sha512-kJhwH5nAwb34tmyuqq/lgjEKzlFXn1U99NlnB6Ws4qVaERcRUYeYP1cBw6BJ4vxaWStAUEef4WMr7WjOCnBt8w==
+
 compute-scroll-into-view@1.0.14:
   version "1.0.14"
   resolved "https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-1.0.14.tgz"
@@ -1688,11 +1709,6 @@ focus-lock@^0.11.2:
   integrity sha512-pZ2bO++NWLHhiKkgP1bEXHhR1/OjVcSvlCJ98aNJDFeb7H5OOQaO+SKOZle6041O9rv2tmbrO4JzClAvDUHf0g==
   dependencies:
     tslib "^2.0.3"
-
-focus-visible@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/focus-visible/-/focus-visible-5.2.0.tgz"
-  integrity sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ==
 
 framer-motion@^6:
   version "6.3.16"
