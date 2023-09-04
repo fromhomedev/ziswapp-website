@@ -7,71 +7,54 @@ import {
   Square,
   Stack,
   Text,
-  useBreakpointValue,
+  useBreakpointValue
 } from "@chakra-ui/react";
 
-import { BsFillMoonFill, BsStars } from "react-icons/bs";
-import { FaAccessibleIcon, FaExpandAlt, FaPaintBrush } from "react-icons/fa";
-import { IoRocketSharp } from "react-icons/io5";
+import { Rocket, Moon, Stars, Accessibility, Maximize2, Brush } from "lucide-react";
 
 const features = [
   {
     name: "210+ Components",
-    description:
-      "Chakra UI Pro has 210+ componentsto help you develop your project faster.",
-    icon: BsStars,
+    description: "Chakra UI Pro has 210+ componentsto help you develop your project faster.",
+    icon: Stars
   },
   {
     name: "Production Ready",
     description:
       "Effortlessly create your next production-ready experience with Chakra UI Pro components.",
-    icon: IoRocketSharp,
+    icon: Rocket
   },
   {
     name: "Light & Dark",
-    description:
-      "All components support a light and a dark color mode out of the box.",
-    icon: BsFillMoonFill,
+    description: "All components support a light and a dark color mode out of the box.",
+    icon: Moon
   },
   {
     name: "Themeable",
     description:
       "Your style. Your purple. Customize the components as you need them. It's that simple.",
-    icon: FaPaintBrush,
+    icon: Brush
   },
   {
     name: "Fully Responsive",
-    description:
-      "Responsive components that look great on mobile, tablet and desktop.",
-    icon: FaExpandAlt,
+    description: "Responsive components that look great on mobile, tablet and desktop.",
+    icon: Maximize2
   },
   {
     name: "Accessible",
     description:
       "Accessibility first. That's why we pay attention to accessibility right from the start.",
-    icon: FaAccessibleIcon,
-  },
+    icon: Accessibility
+  }
 ];
 
 export const ListFeature = () => (
   <Box as="section" bg="bg-surface">
-    <Container
-      py={{ base: "16", md: "24" }}
-      maxW={{ base: "xl", md: "5xl" }}
-      mx="auto"
-    >
+    <Container py={{ base: "16", md: "24" }} maxW={{ base: "xl", md: "5xl" }} mx="auto">
       <Stack spacing={{ base: "12", md: "16" }}>
-        <Stack
-          spacing={{ base: "4", md: "5" }}
-          align="center"
-          textAlign="center"
-        >
+        <Stack spacing={{ base: "4", md: "5" }} align="center" textAlign="center">
           <Stack spacing="3">
-            <Text
-              fontSize={{ base: "sm", md: "md" }}
-              fontWeight="semibold"
-              color="accent"
-            >
+            <Text fontSize={{ base: "sm", md: "md" }} fontWeight="semibold" color="accent">
               Features
             </Text>
             <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
@@ -79,15 +62,11 @@ export const ListFeature = () => (
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: "lg", md: "xl" }} maxW="3xl">
-            A bundle of 210+ ready-to-use, responsive and accessible components
-            with clever structured sourcode files.
+            A bundle of 210+ ready-to-use, responsive and accessible components with clever
+            structured sourcode files.
           </Text>
         </Stack>
-        <SimpleGrid
-          columns={{ base: 1, md: 2, lg: 3 }}
-          columnGap={8}
-          rowGap={{ base: 10, md: 16 }}
-        >
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} columnGap={8} rowGap={{ base: 10, md: 16 }}>
           {features.map((feature) => (
             <Stack
               key={feature.name}
@@ -101,7 +80,7 @@ export const ListFeature = () => (
                 color="inverted"
                 borderRadius="lg"
               >
-                <Icon as={feature.icon} boxSize={{ base: "5", md: "6" }} />
+                <Icon as={feature.icon} boxSize={{ base: "5", md: "6" }} color="white" />
               </Square>
               <Stack spacing={{ base: "1", md: "2" }}>
                 <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="medium">
